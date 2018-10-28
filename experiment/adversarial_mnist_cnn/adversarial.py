@@ -41,7 +41,6 @@ class Model(ModelDesc):
 
         image_raw = tf.constant(self.image, tf.float32)
         noise = tf.get_variable('noise', shape=[BATCH_SIZE, 28, 28], initializer=tf.random_normal_initializer(stddev=0.01))
-        # image = tf.get_variable('image', initializer=self.image, trainable=True)
         image = tf.add(image_raw, noise, name='image')
         image = tf.clip_by_value(image, -1e-5, 1 + 1e-5)
         noise_show = tf.concat([tf.concat([noise[i*N+j] for j in range(N)], axis=1) for i in range(N)], axis=0, name='noise_show')
@@ -71,8 +70,7 @@ class Model(ModelDesc):
         wrong = tf.to_float(tf.logical_not(tf.nn.in_top_k(logits, self.label, 1)), name='wrong_vector')
         add_tensor_summary(tf.reduce_mean(wrong, name='train_error'), ['scalar'])
 
-        return tf.add_n([cost], name='cost')
-        # return tf.add_n([cost, l2_cost], name='cost')
+        return tf.add_n([cost, l2_cost], name='cost')
 
     def optimizer(self):
         lr = tf.get_variable('lr', initializer=3e-3, trainable=False)
