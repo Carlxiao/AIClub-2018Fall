@@ -26,12 +26,12 @@ CNN的主要框架参考了[Keras中的样例代码](https://github.com/keras-te
 
 训练结果：所有对抗样本都被识别为设定的错误标签。
 
-> pred_label: [7 1 3 0 5 9 0 8 8 7 5 6 7 2 6 1]
-L1Norm: 20.069
-L2Norm: 0.39969
-cross_entropy_loss: 0.010374
-regularize_cost: 0.20448
-train_error: 0
+> pred_label: [7 1 3 0 5 9 0 8 8 7 5 6 7 2 6 1]  
+L1Norm: 20.069  
+L2Norm: 0.39969  
+cross_entropy_loss: 0.010374  
+regularize_cost: 0.20448  
+train_error: 0  
 
 生成的对抗样本及对应的噪声：
 
@@ -42,12 +42,12 @@ train_error: 0
 
 训练结果：除了第12个样本（数字3）仍然被识别为3外，其他都被识别为选定的错误标签。
 
-> pred_label: [7 1 3 0 5 9 0 8 8 7 5 3 7 2 6 1]
-L1Norm: 8.4974
-L2Norm: 0.54432
-cross_entropy_loss: 0.18368
-regularize_cost: 1.3596
-train_error: 0.0625
+> pred_label: [7 1 3 0 5 9 0 8 8 7 5 3 7 2 6 1]  
+L1Norm: 8.4974  
+L2Norm: 0.54432  
+cross_entropy_loss: 0.18368  
+regularize_cost: 1.3596  
+train_error: 0.0625  
 
 
 生成的对抗样本及对应的噪声：
@@ -58,12 +58,12 @@ train_error: 0.0625
 
 训练结果：所有样本都被识别为设定的错误标签，并且损失函数（交叉熵）几乎为0。
 
-> pred_label: [7 1 3 0 5 9 0 8 8 7 5 6 7 2 6 1]
-L1Norm: 85.013
-L2Norm: 1.2005
-cross_entropy_loss: 2.1642e-05
-regularize_cost: 1.8447
-train_error: 0
+> pred_label: [7 1 3 0 5 9 0 8 8 7 5 6 7 2 6 1]  
+L1Norm: 85.013  
+L2Norm: 1.2005  
+cross_entropy_loss: 2.1642e-05  
+regularize_cost: 1.8447  
+train_error: 0  
 
 生成的对抗样本和对应的噪声：
 
