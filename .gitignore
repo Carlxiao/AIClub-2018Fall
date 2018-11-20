@@ -108,3 +108,9 @@ data/
 
 # train log
 train_log/
+
+# pretrained model
+model/
+*.npz
+*.prototxt
+*.caffemodel
