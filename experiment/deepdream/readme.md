@@ -77,6 +77,9 @@ Notebook on Google Colab: https://colab.research.google.com/drive/10J8yBMUwi6IRg
     - [StackOverflow上关于不同的模型读/写方式的问题]( https://stackoverflow.com/questions/38947658/tensorflow-saving-into-loading-a-graph-from-a-file)
     - [TensorFlow官方教程 - SavedModel](https://www.tensorflow.org/guide/saved_model#build_and_load_a_savedmodel)
     - [TensorFlow官方教程 - GraphDef](https://www.tensorflow.org/guide/extend/model_files#graphdef)
+    - 公开的预训练模型
+        - [MuffinTech - Directory of Pretrained AI](https://www.muffintech.org/blog/id/7/)
+        - [Tensorpack Model Zoo](http://models.tensorpack.com/)
 - 学会使用Google Colab。Colab不仅提供了一个基于Google Drive的IPython Notebook服务，还为会话提供了一套虚拟机环境，可根据需要安装库，并且可以选择使用GPU加速（显卡是NVIDIA Tesla K80，实际可用显存约为12GB）。Colab适合学习和教育使用。
 - 通过DeepDream的可视化，增进了对CNN的认识。
 
